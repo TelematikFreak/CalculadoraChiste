@@ -12,6 +12,9 @@
 		FA36E721237183C4007A5B4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA36E71F237183C4007A5B4A /* Main.storyboard */; };
 		FA36E723237183C6007A5B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA36E722237183C6007A5B4A /* Assets.xcassets */; };
 		FA36E726237183C6007A5B4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA36E724237183C6007A5B4A /* LaunchScreen.storyboard */; };
+		FA36E73323718438007A5B4A /* CalculadoraModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36E73223718438007A5B4A /* CalculadoraModelo.swift */; };
+		FA36E7352371853B007A5B4A /* CalculadoraVista.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36E7342371853B007A5B4A /* CalculadoraVista.swift */; };
+		FA36E737237188F9007A5B4A /* CalculadoraControlador.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36E736237188F9007A5B4A /* CalculadoraControlador.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		FA36E722237183C6007A5B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA36E725237183C6007A5B4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA36E727237183C6007A5B4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA36E73223718438007A5B4A /* CalculadoraModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraModelo.swift; sourceTree = "<group>"; };
+		FA36E7342371853B007A5B4A /* CalculadoraVista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraVista.swift; sourceTree = "<group>"; };
+		FA36E736237188F9007A5B4A /* CalculadoraControlador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraControlador.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 		FA36E71A237183C4007A5B4A /* Calculadora */ = {
 			isa = PBXGroup;
 			children = (
+				FA36E72F237183F6007A5B4A /* Modelo */,
+				FA36E72E237183F0007A5B4A /* Vista */,
+				FA36E72D237183D2007A5B4A /* Controlador */,
 				FA36E71B237183C4007A5B4A /* AppDelegate.swift */,
 				FA36E71D237183C4007A5B4A /* ViewController.swift */,
 				FA36E71F237183C4007A5B4A /* Main.storyboard */,
@@ -62,6 +71,30 @@
 				FA36E727237183C6007A5B4A /* Info.plist */,
 			);
 			path = Calculadora;
+			sourceTree = "<group>";
+		};
+		FA36E72D237183D2007A5B4A /* Controlador */ = {
+			isa = PBXGroup;
+			children = (
+				FA36E736237188F9007A5B4A /* CalculadoraControlador.swift */,
+			);
+			path = Controlador;
+			sourceTree = "<group>";
+		};
+		FA36E72E237183F0007A5B4A /* Vista */ = {
+			isa = PBXGroup;
+			children = (
+				FA36E7342371853B007A5B4A /* CalculadoraVista.swift */,
+			);
+			path = Vista;
+			sourceTree = "<group>";
+		};
+		FA36E72F237183F6007A5B4A /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				FA36E73223718438007A5B4A /* CalculadoraModelo.swift */,
+			);
+			path = Modelo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA36E737237188F9007A5B4A /* CalculadoraControlador.swift in Sources */,
+				FA36E73323718438007A5B4A /* CalculadoraModelo.swift in Sources */,
 				FA36E71E237183C4007A5B4A /* ViewController.swift in Sources */,
 				FA36E71C237183C4007A5B4A /* AppDelegate.swift in Sources */,
+				FA36E7352371853B007A5B4A /* CalculadoraVista.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
